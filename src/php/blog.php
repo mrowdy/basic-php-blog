@@ -9,5 +9,11 @@ set_include_path(
 
 );
 
+require_once 'getDatabase.php';
+require_once 'getArticleById.php';
+
+$db = getDatabase(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+$article = getArticleById($db, 1);
 
 

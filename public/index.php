@@ -4,9 +4,11 @@
 require_once '../src/php/blog.php';
 
 // include used functions
-require_once 'listArticles.php';
+require_once 'getArticles.php';
 
-//build html
+// load articles
+$articles = getArticles($db);
+var_dump($articles);
 
 
 ?>
