@@ -9,9 +9,11 @@ set_include_path(
 
 );
 
+session_start();
+
 require_once 'getDatabase.php';
-require_once 'insertArticle.php';
-require_once 'updateArticle.php';
+require_once 'addArticle.php';
+require_once 'editArticle.php';
 require_once 'getArticleById.php';
 
 $db = getDatabase(DB_HOST, DB_USER, DB_PASS, DB_NAME);
@@ -27,4 +29,4 @@ $article = array(
 );
 
 
-var_dump(updateArticle($db, $article));
+var_dump(editArticle($db, $article));
