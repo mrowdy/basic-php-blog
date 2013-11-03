@@ -28,5 +28,3 @@ $article = array(
     'status'  => 1,
 );
 
-
-var_dump(editArticle($db, $article));

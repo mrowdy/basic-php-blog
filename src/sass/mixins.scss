@@ -1,0 +1,37 @@
+@mixin box-sizing ($box) {
+  @include prefixer(box-sizing, $box, webkit moz spec);
+}
+
+
+@mixin prefixer ($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if $prefix == webkit {
+        -webkit-#{$property}: $value;
+    }
+    @else if $prefix == moz {
+        -moz-#{$property}: $value;
+    }
+    @else if $prefix == ms {
+        -ms-#{$property}: $value;
+    }
+    @else if $prefix == o {
+        -o-#{$property}: $value;
+    }
+    @else if $prefix == spec {
+        #{$property}: $value;
+    }
+  }
+}
+
+@mixin clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}

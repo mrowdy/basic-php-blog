@@ -1,10 +1,94 @@
 /**
 * simple-php-blog
 * version: 0.1.0
-* date: 29-10-2013
+* date: 03-11-2013
 *
 * ©2013 Slemgrim
 * slemgrim@gmail.com 
 *
 * License: GNU GENERAL PUBLIC LICENSE v2
 */
+.mainNav {
+  background-color: #212121;
+  height: 50px; }
+  .mainNav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    zoom: 1; }
+    .mainNav ul:before, .mainNav ul:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .mainNav ul:after {
+      clear: both; }
+  .mainNav li {
+    margin: 0;
+    padding: 0;
+    float: left; }
+    .mainNav li:first-of-type a {
+      padding-left: 0px; }
+    .mainNav li.right {
+      float: right; }
+  .mainNav a {
+    color: #ededed;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px; }
+
+.header .blogTitle {
+  font-size: 57px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 10px 0 5px; }
+.header .blogSubtitle {
+  font-size: 19px;
+  display: block;
+  text-align: center;
+  border-bottom: 4px solid #464242;
+  padding: 0px 0 10px;
+  opacity: 0.2;
+  text-transform: uppercase; }
+.header .catNavigation ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  zoom: 1;
+  display: block; }
+  .header .catNavigation ul:before, .header .catNavigation ul:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .header .catNavigation ul:after {
+    clear: both; }
+.header .catNavigation li {
+  display: inline-block;
+  text-align: center; }
+.header .catNavigation a {
+  color: #464242;
+  text-decoration: none;
+  display: inline-block; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-size: 19px; }
+
+body * {
+  -webkit-box-sizing: "border-box";
+  -moz-box-sizing: "border-box";
+  box-sizing: "border-box"; }
+
+body {
+  background-color: #f7f9f9; }
+
+.wrap {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }

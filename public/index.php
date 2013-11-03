@@ -8,8 +8,6 @@ require_once 'getArticles.php';
 
 // load articles
 $articles = getArticles($db);
-var_dump($articles);
-
 
 ?>
 
@@ -20,10 +18,8 @@ var_dump($articles);
 </head>
 <body>
     <div id="outer">
-        <div class="wrap">
-            <?php include 'layout/header.php'; ?>
-            <?php include 'layout/navigation.php'; ?>
-        </div>
+        <?php include 'layout/navigation.php'; ?>
+        <?php include 'layout/header.php'; ?>
         <div class="wrap">
             <div id="content" class="grid">
 

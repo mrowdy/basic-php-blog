@@ -12,7 +12,7 @@ function login($db, $username, $password){
         $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
         $_SESSION['user_login'] = true;
         $_SESSION['username'] = $user['username'];
-        $_SESSION['user_hash'] = md5($_SERVER['HTTP_USER_AGENT']);
+        $_SESSION['user_hash'] = md5($_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR']);
         return true;
     }
 
@@ -25,7 +25,7 @@ function logout(){
 }
 
 function auth(){
-    $userHash = md5($_SERVER['HTTP_USER_AGENT']);
+    $userHash = md5($_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR']);
     if($_SESSION['user_hash'] == $userHash && $_SESSION['user_login'] == true){
         return true;
     }
