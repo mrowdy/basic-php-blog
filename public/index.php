@@ -7,7 +7,7 @@ require_once '../src/php/blog.php';
 require_once 'getArticles.php';
 
 // load articles
-$articles = getArticles($db);
+$articleList = getArticles($db);
 
 ?>
 
@@ -22,7 +22,7 @@ $articles = getArticles($db);
         <?php include 'layout/header.php'; ?>
         <div class="wrap">
             <div id="content" class="grid">
-
+                <?php include 'layout/articleList.php'; ?>
             </div>
             <div class="grid">
                 <?php include 'layout/sidebar.php'; ?>
