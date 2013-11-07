@@ -1,6 +1,7 @@
 <?php
 
-function addCategory($db, array $category){
+function addCategory(array $category){
+    global $db;
 
     $name =         mysqli_real_escape_string($db, $category['name']);
     $slug =         $category['slug'] = str_replace('~\W~', '-', $name);

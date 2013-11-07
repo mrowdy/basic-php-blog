@@ -18,7 +18,7 @@ body {
 }
 
 body * {
-  @include box-sizing('border-box');
+  @include box-sizing(border-box);
 }
 
 body {
@@ -40,3 +40,16 @@ ul {
   max-width: $maxWidth;
   margin: 0 auto;
 }
+
+#content {
+  width: 70%;
+  float: left;
+  padding-right: 30px;
+}
+
+#sidebar {
+  width: 30%;
+  float: left;
+}
+
+@import 'responsive/blog';

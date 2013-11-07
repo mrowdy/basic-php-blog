@@ -1,6 +1,8 @@
 <?php
 
-function getCategories($db){
+function getCategories(){
+    global $db;
+    
     $query = "SELECT * FROM category WHERE status = '1' ORDER BY name";
     $result = mysqli_query($db, $query);
     $categories = array();

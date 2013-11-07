@@ -1,6 +1,7 @@
 <?php
 
-function deleteArticle($db, $id){
+function deleteArticle($id){
+    global $db;
 
     $query = sprintf("UPDATE article SET status = 0  WHERE id = '%d'", $id);
 

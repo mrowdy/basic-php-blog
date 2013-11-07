@@ -1,6 +1,7 @@
 <?php
 
-function editArticle($db, array $article){
+function editArticle(array $article){
+    global $db;
 
     $id =           intval($article['id']);
     $title =        mysqli_real_escape_string($db, $article['title']);

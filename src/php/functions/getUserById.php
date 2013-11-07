@@ -1,9 +1,9 @@
 <?php
 
-function getCategoryById($id){
+function getUserById($id){
     global $db;
-    
-    $query = sprintf("SELECT * FROM category WHERE id='%d' AND status='1'", $id);
+
+    $query = sprintf("SELECT * FROM user WHERE id='%d' AND status='1'", $id);
     $result = mysqli_query($db, $query);
 
     if(mysqli_num_rows($result) > 0){

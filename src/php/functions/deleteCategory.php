@@ -1,6 +1,7 @@
 <?php
 
-function deleteCategory($db, $id){
+function deleteCategory($id){
+    global $db;
 
     $query = sprintf("UPDATE category SET status = 0  WHERE id = '%d'", $id);
 

@@ -12,19 +12,17 @@ set_include_path(
 session_start();
 
 require_once 'getDatabase.php';
-require_once 'addArticle.php';
-require_once 'editArticle.php';
+
+//Article Functions
+require_once 'getArticles.php';
 require_once 'getArticleById.php';
+require_once 'getArticlesByCategorySlug.php';
+
+//Category functions
+require_once 'getCategories.php';
+require_once 'getCategoryById.php';
+
+//User Functions
+require_once 'getUserById.php';
 
 $db = getDatabase(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
-$article = getArticleById($db, 1);
-
-$article = array(
-    'id' => 3,
-    'title' => 'Genera \' tedaasdfa article',
-    'teaser' => 'short teasdfasdfaser',
-    'content' => 'i am the coasdfntent',
-    'status'  => 1,
-);
-

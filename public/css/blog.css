@@ -1,7 +1,7 @@
 /**
 * simple-php-blog
 * version: 0.1.0
-* date: 06-11-2013
+* date: 07-11-2013
 *
 * ©2013 Slemgrim
 * slemgrim@gmail.com 
@@ -106,6 +106,9 @@
     width: 100%;
     margin: 0 auto;
     padding: 20px 0; }
+  .article .articleTeaser {
+    font-weight: bold;
+    font-size: 20.9px; }
 
 html,
 body {
@@ -117,9 +120,9 @@ body {
   line-height: 1.6; }
 
 body * {
-  -webkit-box-sizing: "border-box";
-  -moz-box-sizing: "border-box";
-  box-sizing: "border-box"; }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
   background-color: #f7f9f9; }
@@ -136,3 +139,22 @@ ul {
   width: 100%;
   max-width: 900px;
   margin: 0 auto; }
+
+#content {
+  width: 70%;
+  float: left;
+  padding-right: 30px; }
+
+#sidebar {
+  width: 30%;
+  float: left; }
+
+@media (max-width: 640px) {
+  #content {
+    width: 100%;
+    float: none;
+    padding-right: 0; }
+
+  #sidebar {
+    width: 100%;
+    float: none; } }

@@ -3,33 +3,30 @@
 // include blog setup
 require_once '../src/php/blog.php';
 
-// include used functions
-require_once 'getArticles.php';
-
 // load articles
-$articleList = getArticles($db);
+$articleList = getArticles();
 
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include 'layout/meta.php'; ?>
+    <?php include 'layout/_meta.php'; ?>
 </head>
 <body>
     <div id="outer">
-        <?php include 'layout/navigation.php'; ?>
-        <?php include 'layout/header.php'; ?>
+        <?php include 'layout/_navigation.php'; ?>
+        <?php include 'layout/_header.php'; ?>
         <div class="wrap">
-            <div id="content" class="grid">
-                <?php include 'layout/articleList.php'; ?>
+            <div id="content">
+                <?php include 'layout/_teaserList.php'; ?>
             </div>
-            <div class="grid">
-                <?php include 'layout/sidebar.php'; ?>
+            <div id="sidebar">
+                <?php include 'layout/_sidebar.php'; ?>
             </div>
         </div>
         <div class="wrap">
-            <?php include 'layout/footer.php'; ?>
+            <?php include 'layout/_footer.php'; ?>
         </div>
     </div>
 </body>

@@ -1,6 +1,7 @@
 <?php
 
-function editCategory($db, array $category){
+function editCategory(array $category){
+    global $db;
 
     $id =           intval($category['id']);
     $name =         mysqli_real_escape_string($db, $category['name']);

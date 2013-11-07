@@ -5,6 +5,7 @@ ini_set('display_errors', 1);
 
 // Directories
 define('BASE_DIR', __DIR__);
+define('UPLOAD_PATH', __DIR__ . '../../public/images/');
 
 // Database
 define('DB_HOST', 'localhost');

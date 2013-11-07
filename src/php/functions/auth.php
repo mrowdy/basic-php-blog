@@ -1,6 +1,8 @@
 <?php
 
-function login($db, $username, $password){
+function login($username, $password){
+    global $db;
+
     $username = mysqli_real_escape_string($db, $username);
     $password = md5($password);
 

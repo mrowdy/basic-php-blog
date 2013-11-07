@@ -1,9 +1,13 @@
 <?php
 
-function getArticleByCategorySlug($db, $categorySlug){
+function getArticlesByCategorySlug($categorySlug){
+    global $db;
+
+    $categorySlug = mysqli_real_escape_string($db, $categorySlug);
+
     $query = sprintf("SELECT article.* FROM article
                       LEFT JOIN category ON category.id = article.category_id
-                      WHERE category.slug='%s' AND article.status='1'", $id);
+                      WHERE category.slug='%s' AND article.status='1'", $categorySlug);
 
     $result = mysqli_query($db, $query);
     $articles = array();

@@ -1,6 +1,7 @@
 <?php
 
-function addArticle($db, array $article){
+function addArticle(array $article){
+    global $db;
 
     $title =        mysqli_real_escape_string($db, $article['title']);
     $teaser =       mysqli_real_escape_string($db, $article['teaser']);
