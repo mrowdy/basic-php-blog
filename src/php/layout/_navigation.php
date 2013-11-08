@@ -1,6 +1,7 @@
 <nav class="mainNav">
     <div class="wrap">
         <ul>
+            <li><a href="/index.php">Blog</a></li>
             <li><a href="/about.php">About</a></li>
             <li><a href="/imprint.php">Imprint</a></li>
             <li><a href="/contact.php">Contact</a></li>

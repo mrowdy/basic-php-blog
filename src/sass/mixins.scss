@@ -35,3 +35,7 @@
     clear: both;
   }
 }
+
+@mixin transition ($properties...) {
+    @include prefixer(transition, $properties, webkit moz spec);
+}

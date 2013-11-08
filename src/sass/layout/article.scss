@@ -1,11 +1,17 @@
 .article {
   padding-bottom: 50px;
+  padding: 0px;
 
   .articleTitle {
     text-align: center;
-    font-size: $baseFontSize * 2;
+    font-size: $baseFontSize * 1.6;
     text-transform: uppercase;
-    margin: 20px 0 5px;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: $highlightColor;
+    a {
+      color: $logoColor;
+    }
   }
 
   .meta {
@@ -13,18 +19,36 @@
     display: block;
     color: rgba(0, 0, 0, .3);
     font-size: $baseFontSize * .8;
+    padding: 0 15;
   }
 
   .articleContent {
-    max-width: 80%;
-    width: 100%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 30px;
   }
 
   .articleTeaser {
-    font-weight: bold;
-    font-size: $baseFontSize * 1.1;
+    &.bold {
+      font-weight: bold;
+    }
+  }
+
+
+  .articleImage {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: block;
+  }
+
+  a {
+    @include transition(color .5s);
+
+    &:hover {
+      color: rgba(0, 0, 0, .3);
+    }
   }
 
 }

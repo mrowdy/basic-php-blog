@@ -4,15 +4,9 @@
   display: block;
   margin: 30px 0;
 
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
   &.whiteBox {
     background-color: $articleBackground;
+    border-radius: 1px;
   }
 
 }

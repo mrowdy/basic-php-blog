@@ -1,6 +1,7 @@
-<h1>Categories <a class="right" href="/admin/edit-category.php?action=add">add</a></h1>
+<h1>Categories</h1>
+<a class="right button small" href="/admin/edit-category.php?action=add">add</a>
 <?php if(isset($categoryList)): ?>
-    <table class="adminTable">
+    <table class="table">
         <tr>
             <th>Name</th>
             <th colspan="2">Action</th>

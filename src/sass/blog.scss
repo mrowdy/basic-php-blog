@@ -2,6 +2,10 @@
 @import 'mixins';
 
 @import 'gui/box';
+@import 'gui/form';
+@import 'gui/sidebar';
+@import 'gui/table';
+
 
 @import 'layout/navigation';
 @import 'layout/header';
@@ -14,7 +18,8 @@ body {
   min-height: 100%;
   font-size: $baseFontSize;
   font-family: $textFont;
-  line-height: 1.6;
+  color: $mainFontColor;
+  line-height: 1.7;
 }
 
 body * {
@@ -27,12 +32,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $headingFont;
+  letter-spacing: .5px;
 }
 
 ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $highlightColor;
 }
 
 .wrap {
@@ -43,13 +54,29 @@ ul {
 
 #content {
   width: 70%;
-  float: left;
-  padding-right: 30px;
+  float: right;
+}
+
+.smallContent {
+  width: 100%;
+  max-width: 320px;
+  margin: 30px auto;
+}
+
+.mediumContent {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
 }
 
 #sidebar {
   width: 30%;
-  float: left;
+  float: right;
+  padding-right: 30px;
+}
+
+.right {
+  float: right;
 }
 
 @import 'responsive/blog';

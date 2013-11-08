@@ -1,4 +1,4 @@
-<meta charset=utf-8 />
+<meta charset=UTF-8 />
 <title>Simple Blog</title>
 <link rel="stylesheet" type="text/css" media="screen" href="/css/blog.css" />
 <!--[if IE]>

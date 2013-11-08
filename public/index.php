@@ -18,6 +18,7 @@ $articleList = getArticles();
         <?php include 'layout/_navigation.php'; ?>
         <?php include 'layout/_header.php'; ?>
         <div class="wrap">
+
             <div id="content">
                 <?php include 'layout/_teaserList.php'; ?>
             </div>

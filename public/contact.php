@@ -15,6 +15,7 @@ require_once '../src/php/blog.php';
     <?php include 'layout/_navigation.php'; ?>
     <?php include 'layout/_header.php'; ?>
     <div class="wrap">
+
         <div id="content">
             <h1>Contact</h1>
             <p>not implemented</p>

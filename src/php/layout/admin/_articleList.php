@@ -1,6 +1,7 @@
-<h1>Articles <a class="right" href="/admin/edit-article.php?action=add">add</a></h1>
+<h1>Articles</h1>
+<a class="right button small" href="/admin/edit-article.php?action=add">add</a>
 <?php if(isset($articleList)): ?>
-    <table class="adminTable">
+    <table class="table">
         <tr>
             <th>Title</th>
             <th colspan="2">Action</th>

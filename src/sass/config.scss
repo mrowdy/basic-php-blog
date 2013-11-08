@@ -1,15 +1,21 @@
 $maxWidth: 900px;
 
 // Colors
-$backgrouncColor: #f7f9f9;
-$mainFontColor: #464242;
+$backgrouncColor: #30343f;
+$mainFontColor: #838383;
 $navBackground: #212121;
 $navColor: #ededed;
-
+$logoColor: #ffffff;
+$highlightColor: #29ab91;
 $articleBackground: #ffffff;
+$inputBackground: #1e2229;
 
 
 // Font
-$baseFontSize: 19px;
+$baseFontSize: 17px;
 $textFont: 'Tienne', serif;
 $headingFont: 'Oswald', sans-serif;
+
+
+//breakpoints
+$mainBreakPoint: 650px;

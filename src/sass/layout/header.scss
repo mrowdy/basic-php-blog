@@ -3,17 +3,19 @@
     font-size: $baseFontSize * 3;
     font-weight: bold;
     display: block;
-    text-align: center;
-    padding: 10px 0 5px;
+    padding: 30px 0 10px;
+    color: $logoColor;
+    line-height: 1;
+    font-family: $headingFont;
   }
 
   .blogSubtitle {
     font-size: $baseFontSize;
     display: block;
-    text-align: center;
-    border-bottom: 1px solid $mainFontColor;
     padding: 0px 0 10px;
     text-transform: uppercase;
+    color: $mainFontColor;
+    font-weight: lighter;
   }
 
   .catNavigation {
@@ -41,6 +43,5 @@
       text-decoration: none;
       display: inline-block;
     }
-
   }
 }

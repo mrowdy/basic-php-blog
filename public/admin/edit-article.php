@@ -65,7 +65,12 @@ if($action == 'edit' && $id){
 <div id="outer">
     <?php include 'layout/admin/_navigation.php'; ?>
     <div class="wrap">
-        <div id="content">
+        <div class="mediumContent">
+            <?php if($action == 'edit'): ?>
+                <h1>Edit Article</h1>
+            <?php else: ?>
+                <h1>Add Article</h1>
+            <?php endif; ?>
             <?php include 'layout/admin/_articleForm.php'; ?>
         </div>
     </div>

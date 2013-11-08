@@ -13,16 +13,6 @@ module.exports = function(grunt) {
             '* License: GNU GENERAL PUBLIC LICENSE v2\n' +
             '*/',
 
-        requirejs: {
-            build: {
-                options: {
-                    baseUrl: 'src/js',
-                    name: 'blog',
-                    out: 'public/js/blog.min.js',
-                    removeCombined: false
-                }
-            }
-        },
         usebanner: {
             build: {
                 options: {
@@ -38,7 +28,6 @@ module.exports = function(grunt) {
             build: {
                 options: {
                     loadPath: 'sass',
-                    //style: 'compressed',
                     cacheLocation: 'cache/sass',
                     banner: '<%= banner %>'
                 },
@@ -49,9 +38,8 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-banner');
 
-    grunt.registerTask('default', ['requirejs', 'sass', 'usebanner']);
+    grunt.registerTask('default', ['sass', 'usebanner']);
 };

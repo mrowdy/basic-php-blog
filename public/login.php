@@ -30,7 +30,9 @@ if(auth()){
 <div id="outer">
     <?php include 'layout/_navigation.php'; ?>
     <div class="wrap">
-        <?php include 'layout/_loginForm.php'; ?>
+        <div class="smallContent">
+            <?php include 'layout/_loginForm.php'; ?>
+        </div>
     </div>
     <div class="wrap">
         <?php include 'layout/_footer.php'; ?>
