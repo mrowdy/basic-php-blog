@@ -13,7 +13,8 @@ function login($username, $password){
     if($result && mysqli_num_rows($result) == 1){
         $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
         $_SESSION['user_login'] = true;
-        $_SESSION['username'] = $user['username'];
+        $_SESSION['user_name'] = $user['username'];
+        $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_hash'] = md5($_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR']);
         return true;
     }
