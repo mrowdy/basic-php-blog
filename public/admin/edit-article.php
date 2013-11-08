@@ -6,25 +6,30 @@ $action = isset($_REQUEST['action'])?$_REQUEST['action']:'add';
 $save   = isset($_POST['save'])?true:false;
 
 $id = isset($_REQUEST['id'])?$_REQUEST['id']:0;
-$name = isset($_POST['name'])?$_POST['name']:'';
+$title = isset($_POST['title'])?$_POST['title']:'';
+$teaser = isset($_POST['teaser'])?$_POST['teaser']:'';
+$content = isset($_POST['content'])?$_POST['content']:'';
 
 if($action == 'edit' && $id){
-    $category = getCategoryById($id);
-
+    $article = getArticleById($id);
     if($save){
-        $category['name'] = $name;
-        $category = editCategory($category);
-        header('location: /admin/category.php');
+        $article['title'] = $title;
+        $article['teaser'] = $teaser;
+        $article['content'] = $content;
+        $article = editArticle($article);
+        header('location: /admin/article.php');
         die();
     }
 
 } else {
-    $category = array(
-        'name' => $name
+    $article = array(
+        'title' => $title,
+        'teaser' => $teaser,
+        'content' => $content,
     );
     if($save){
-        $category = addCategory($category);
-        header('location: /admin/category.php');
+        $article = addArticle($article);
+        header('location: /admin/article.php');
         die();
     }
 }
@@ -41,7 +46,7 @@ if($action == 'edit' && $id){
     <?php include 'layout/admin/_navigation.php'; ?>
     <div class="wrap">
         <div id="content">
-            <?php include 'layout/admin/_categoryForm.php'; ?>
+            <?php include 'layout/admin/_articleForm.php'; ?>
         </div>
     </div>
     <div class="wrap">

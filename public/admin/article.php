@@ -23,7 +23,7 @@ $articleList = getArticles();
     <?php include 'layout/admin/_navigation.php'; ?>
     <div class="wrap">
         <div id="content">
-
+            <?php include 'layout/admin/_articleList.php'; ?>
         </div>
     </div>
     <div class="wrap">
