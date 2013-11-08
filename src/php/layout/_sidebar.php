@@ -19,9 +19,5 @@
 
 <nav class="box whiteBox">
     <h3>Login</h3>
-    <form action="/login.php" method="post">
-        <input type="text" name="username" />
-        <input type="password" name="password" />
-        <input type="submit" value="login" />
-    </form>
+    <?php include_once '_loginForm.php'; ?>
 </nav>
