@@ -1,4 +1,4 @@
-<form action="/admin/edit-article.php" method="post">
+<form action="/admin/edit-article.php" method="post" enctype="multipart/form-data" >
     <input type="text" name="title" value="<?php echo $article['title'] ?>" placeholder="title" />
     <textarea placeholder="teaser" name="teaser"><?php echo $article['teaser'] ?></textarea>
     <textarea placeholder="content" name="content"><?php echo $article['content'] ?></textarea>
@@ -10,6 +10,7 @@
         <?php endforeach; ?>
     </select>
 
+    <input type="file" name="article_image" />
 
     <input type="hidden" name="action" value="<?php echo $action ?>" />
     <?php if($action == 'edit'): ?>

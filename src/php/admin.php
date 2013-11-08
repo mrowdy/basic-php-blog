@@ -28,6 +28,7 @@ require_once 'getArticlesByCategorySlug.php';
 require_once 'addArticle.php';
 require_once 'editArticle.php';
 require_once 'deleteArticle.php';
+require_once 'uploadImage.php';
 
 //Category functions
 require_once 'getCategories.php';

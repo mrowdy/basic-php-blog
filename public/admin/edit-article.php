@@ -11,13 +11,23 @@ $teaser =     isset($_POST['teaser'])?$_POST['teaser']:'';
 $content =    isset($_POST['content'])?$_POST['content']:'';
 $categoryId = isset($_POST['category_id'])?$_POST['category_id']:DEFAULT_CATEGORY;
 
+$image = isset($_FILES['article_image']) && $_FILES['article_image']['tmp_name'] ?$_FILES['article_image']:false;
+
 if($action == 'edit' && $id){
     $article = getArticleById($id);
     if($save){
+
+
+
         $article['title'] =       $title;
         $article['teaser'] =      $teaser;
         $article['content'] =     $content;
         $article['category_id'] = $categoryId;
+
+        if($image){
+            $imageName = uploadImage($image);
+            $article['image'] =       $imageName;
+        }
 
         $article = editArticle($article);
 
@@ -32,6 +42,12 @@ if($action == 'edit' && $id){
         'content'     => $content,
         'category_id' => $categoryId,
     );
+
+    if($image){
+        $imageName = uploadImage($image);
+        $article['image'] = $imageName;
+    }
+
     if($save){
         $article = addArticle($article);
 
