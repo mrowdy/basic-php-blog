@@ -6,11 +6,10 @@ function addArticle(array $article){
     $title =        mysqli_real_escape_string($db, $article['title']);
     $teaser =       mysqli_real_escape_string($db, $article['teaser']);
     $content =      mysqli_real_escape_string($db, $article['content']);
-    $categoryId =   isset($article['category_id'])?$article['category_id']:DEFAULT_CATEGORY;
+    $categoryId =   intval($article['category_id']);
 
-
+    $image =        isset($article['image'])?mysqli_real_escape_string($db, $article['image']):'';
     $slug =         $article['slug'] = str_replace('~\W~', '-', $title);
-    $image =        $article['image'] = '';
     $user_id =      $article['user_id'] = $_SESSION['user_id'];
     $dateCreated  = $article['date_created'] = time();
     $dateModified = $article['date_modified'] = time();

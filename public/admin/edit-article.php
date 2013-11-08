@@ -17,16 +17,14 @@ if($action == 'edit' && $id){
     $article = getArticleById($id);
     if($save){
 
-
-
         $article['title'] =       $title;
         $article['teaser'] =      $teaser;
         $article['content'] =     $content;
         $article['category_id'] = $categoryId;
 
         if($image){
-            $imageName = uploadImage($image);
-            $article['image'] =       $imageName;
+            $imageName = uploadImage($image, UPLOAD_PATH);
+            $article['image'] =  $imageName;
         }
 
         $article = editArticle($article);
@@ -44,7 +42,7 @@ if($action == 'edit' && $id){
     );
 
     if($image){
-        $imageName = uploadImage($image);
+        $imageName = uploadImage($image, UPLOAD_PATH);
         $article['image'] = $imageName;
     }
 

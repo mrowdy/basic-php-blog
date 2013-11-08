@@ -8,3 +8,20 @@
         <?php endforeach; ?>
     </ul>
 </nav>
+
+<nav class="box whiteBox">
+    <h3>Search</h3>
+    <form action="/search.php" method="get">
+        <input type="text" name="search" />
+        <input type="submit" value="search" />
+    </form>
+</nav>
+
+<nav class="box whiteBox">
+    <h3>Login</h3>
+    <form action="/login.php" method="post">
+        <input type="text" name="username" />
+        <input type="password" name="password" />
+        <input type="submit" value="login" />
+    </form>
+</nav>

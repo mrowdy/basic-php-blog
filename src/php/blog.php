@@ -20,6 +20,7 @@ require_once 'auth.php';
 require_once 'getArticles.php';
 require_once 'getArticleById.php';
 require_once 'getArticlesByCategorySlug.php';
+require_once 'searchArticles.php';
 
 //Category functions
 require_once 'getCategories.php';

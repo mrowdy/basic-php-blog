@@ -9,7 +9,7 @@
             <tr>
                 <td><?php echo $category['name']; ?></td>
                 <td><a href="/admin/edit-category.php?action=edit&id=<?php echo $category['id']; ?>">edit</a></td>
-                <td><a href="/admin/category?action=delete&id=<?php echo $category['id']; ?>.php">delete</a></td>
+                <td><a href="/admin/category.php?action=delete&id=<?php echo $category['id']; ?>.php">delete</a></td>
             </tr>
         <?php endforeach; ?>
     </table>
