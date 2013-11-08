@@ -2,6 +2,8 @@
 
 require_once 'config.php';
 
+date_default_timezone_set('Europe/Vienna');
+
 set_include_path(
     get_include_path() .
     PATH_SEPARATOR . BASE_DIR .                         //PHP Directory
@@ -12,6 +14,7 @@ set_include_path(
 session_start();
 
 require_once 'getDatabase.php';
+require_once 'auth.php';
 
 //Article Functions
 require_once 'getArticles.php';
