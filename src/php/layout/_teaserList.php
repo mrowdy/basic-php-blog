@@ -1,3 +1,4 @@
+<!-- TeaserList Start-->
 <?php  if(isset($articleList) && is_array($articleList) && count($articleList) > 0): ?>
     <ul class="articleList">
         <?php foreach($articleList as $article): ?>
@@ -9,3 +10,4 @@
 <?php else: ?>
     <h3>No articles found</h3>
 <?php endif; ?>
+<!-- TeaserList End-->

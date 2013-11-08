@@ -35,9 +35,6 @@ $articleList = getArticlesByCategorySlug($categorySlug);
             <?php include 'layout/_sidebar.php'; ?>
         </div>
     </div>
-    <div class="wrap">
-        <?php include 'layout/_footer.php'; ?>
-    </div>
 </div>
 </body>
 </html>

@@ -1,3 +1,5 @@
+<!-- Sidebar Start -->
+
 <?php $categories = getCategories(); ?>
 
 <nav class="box">
@@ -28,3 +30,4 @@
     <h3>Login</h3>
     <?php include_once '_loginForm.php'; ?>
 </nav>
+<!-- Sidebar End-->

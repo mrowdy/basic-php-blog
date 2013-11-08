@@ -1,3 +1,4 @@
+<!-- Teaser Start-->
 <article class="article teaser box whiteBox">
     <h2 class="articleTitle"><a href="/article.php?id=<?php echo $article['id']; ?>"><?php echo $article['title']; ?></a></h2>
     <?php if($article['image']): ?>
@@ -18,3 +19,4 @@
         </span>
     </div>
 </article>
+<!-- Teaser End-->

@@ -26,9 +26,6 @@ $categoryList = getCategories();
             <?php include 'layout/admin/_categoryList.php'; ?>
         </div>
     </div>
-    <div class="wrap">
-        <?php include 'layout/_footer.php'; ?>
-    </div>
 </div>
 </body>
 </html>

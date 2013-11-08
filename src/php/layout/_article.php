@@ -1,3 +1,4 @@
+<!-- Article Start -->
 <article class="article box whiteBox">
     <h1 class="articleTitle"><a href="/article.php?id=<?php echo $article['id']; ?>"><?php echo $article['title']; ?></a></h1>
     <?php if($article['image']): ?>
@@ -20,3 +21,4 @@
         </span>
     </div>
 </article>
+<!-- Article End -->

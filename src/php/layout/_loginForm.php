@@ -1,3 +1,4 @@
+<!-- LoginForm Start -->
 <div class="form loginForm">
     <?php if(isset($error) && !empty($error)): ?>
         <span class="loginError"><?php echo $error; ?></span>
@@ -15,3 +16,4 @@
         </div>
     </form>
 </div>
+<!-- LoginForm End-->

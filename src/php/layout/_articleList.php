@@ -1,4 +1,5 @@
-<?php   if(isset($articleList)): ?>
+<!-- ArticleList Start-->
+<?php if(isset($articleList)): ?>
     <ul class="articleList">
         <?php foreach($articleList as $article): ?>
             <li>
@@ -7,3 +8,4 @@
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
+<!-- ArticleList End -->

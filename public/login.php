@@ -34,9 +34,6 @@ if(auth()){
             <?php include 'layout/_loginForm.php'; ?>
         </div>
     </div>
-    <div class="wrap">
-        <?php include 'layout/_footer.php'; ?>
-    </div>
 </div>
 </body>
 </html>

@@ -26,9 +26,6 @@ $articleList = getArticles();
             <?php include 'layout/admin/_articleList.php'; ?>
         </div>
     </div>
-    <div class="wrap">
-        <?php include 'layout/_footer.php'; ?>
-    </div>
 </div>
 </body>
 </html>
