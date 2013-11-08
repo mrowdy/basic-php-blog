@@ -6,10 +6,12 @@ function addArticle(array $article){
     $title =        mysqli_real_escape_string($db, $article['title']);
     $teaser =       mysqli_real_escape_string($db, $article['teaser']);
     $content =      mysqli_real_escape_string($db, $article['content']);
+    $categoryId =   isset($article['category_id'])?$article['category_id']:DEFAULT_CATEGORY;
+
+
     $slug =         $article['slug'] = str_replace('~\W~', '-', $title);
     $image =        $article['image'] = '';
-    $categoryId =   $article['category_id'] = 1;
-    $user_id =      $article['user_id'] = 1;
+    $user_id =      $article['user_id'] = $_SESSION['user_id'];
     $dateCreated  = $article['date_created'] = time();
     $dateModified = $article['date_modified'] = time();
     $status =       $article['status'] = 1;
@@ -17,7 +19,7 @@ function addArticle(array $article){
     $query = sprintf("INSERT INTO article
                      (title, slug, teaser, content, category_id, user_id, image, date_created, date_modified, status)
                      VALUES ('%s', '%s', '%s', '%s', '%d', '%d', '%s', '%d', '%d', '%d')",
-                     $title, $slug, $teaser, $content, $categoryId, $categoryId, $image, $dateCreated, $dateModified, $status);
+                     $title, $slug, $teaser, $content, $categoryId, $user_id, $image, $dateCreated, $dateModified, $status);
 
     $result = mysqli_query($db, $query);
     if($result){

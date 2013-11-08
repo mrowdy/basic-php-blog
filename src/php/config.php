@@ -12,3 +12,6 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'markus');
 define('DB_PASS', 'swordfish');
 define('DB_NAME', 'simple_blog');
+
+// Defaults
+define('DEFAULT_CATEGORY', 1);

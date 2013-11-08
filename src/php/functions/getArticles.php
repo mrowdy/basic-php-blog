@@ -1,9 +1,9 @@
 <?php
 
-function getArticles($limit = 5){
+function getArticles(){
     global $db;
 
-    $query = sprintf("SELECT * FROM article WHERE status = '1' ORDER BY date_created DESC LIMIT 0,%d", $limit);
+    $query = "SELECT * FROM article WHERE status = '1' ORDER BY date_created DESC";
     $result = mysqli_query($db, $query);
     $articles = array();
 
