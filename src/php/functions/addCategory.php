@@ -11,7 +11,7 @@ function addCategory(array $category){
 
     $query = sprintf("INSERT INTO category
                      (name, slug, date_created, date_modified, status)
-                     VALUES ('%s', '%s', '%s', '%d', '%d', '%d')",
+                     VALUES ('%s', '%s', '%d', '%d', '%d')",
                      $name, $slug, $dateCreated, $dateModified, $status);
 
     $result = mysqli_query($db, $query);
