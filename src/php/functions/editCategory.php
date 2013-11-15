@@ -1,5 +1,11 @@
 <?php
 
+
+/**
+ *  * Edit category in database. needs $category array with id
+ * @param array $category
+ * @return array|bool
+ */
 function editCategory(array $category){
     global $db;
 

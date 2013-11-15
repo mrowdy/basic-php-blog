@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * returns all articles, neweset first
+ * @return array|bool
+ */
 function getArticles(){
     global $db;
 

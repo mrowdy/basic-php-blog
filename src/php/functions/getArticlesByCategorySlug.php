@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * get all articles from given category slug
+ * @param $categorySlug
+ * @return array|bool
+ */
 function getArticlesByCategorySlug($categorySlug){
     global $db;
 

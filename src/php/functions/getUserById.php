@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * get user array of active user by given id
+ * @param $id
+ * @return array|bool|null
+ */
 function getUserById($id){
     global $db;
 

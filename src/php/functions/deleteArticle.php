@@ -1,5 +1,11 @@
 <?php
 
+
+/**
+ * Set srticles status to 0
+ * @param $id
+ * @return bool|mysqli_result
+ */
 function deleteArticle($id){
     global $db;
 

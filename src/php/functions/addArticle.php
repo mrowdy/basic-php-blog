@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Saves article to database. needs array with title, teaser and content
+ * @param array $article
+ * @return array|bool
+ */
 function addArticle(array $article){
     global $db;
 

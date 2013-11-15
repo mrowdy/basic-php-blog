@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * get all active categories ordered by name
+ * @return array|bool
+ */
 function getCategories(){
     global $db;
     

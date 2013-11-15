@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Saves category to database. needs array with name.
+ * @param array $category
+ * @return array|bool
+ */
 function addCategory(array $category){
     global $db;
 

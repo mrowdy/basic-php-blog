@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * get all active articles by given search string. search in teaser, content, user, category
+ * @param $string
+ * @return array|bool
+ */
 function searchArticles($string){
     global $db;
 
@@ -8,12 +13,13 @@ function searchArticles($string){
     $query = sprintf("SELECT article.* FROM article
                     LEFT JOIN category ON article.category_id = category.id
                     LEFT JOIN user ON article.user_id = user.id
-                    WHERE article.title LIKE '%%%s%%'
+                    WHERE ( article.title LIKE '%%%s%%'
                     OR article.teaser LIKE '%%%s%%'
                     OR article.content LIKE '%%%s%%'
                     OR article.image LIKE '%%%s%%'
                     OR category.name LIKE '%%%s%%'
-                    OR user.username LIKE '%%%s%%'
+                    OR user.username LIKE '%%%s%%' )
+                    AND active = '1'
                     ORDER BY article.date_created DESC
                     ", $string, $string, $string, $string, $string, $string);
 

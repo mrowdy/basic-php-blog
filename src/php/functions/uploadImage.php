@@ -1,6 +1,8 @@
 <?php
 
 /**
+ * Save image from $_FILES array to destination
+ * Filters filename
  * @param array $image from $_FILES array
  * @param $destination
  * @return bool|string filename or false on error

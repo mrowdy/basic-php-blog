@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Edit article in database. needs $article array with id
+ * @param array $article
+ * @return array|bool
+ */
 function editArticle(array $article){
     global $db;
 

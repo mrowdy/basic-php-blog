@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * returns article array by given ip
+ * @param $id
+ * @return array|bool|null
+ */
 function getArticleById($id){
     global $db;
 

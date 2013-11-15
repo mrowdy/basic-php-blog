@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * get active category array by given ip
+ * @param $id
+ * @return array|bool|null
+ */
 function getCategoryById($id){
     global $db;
     

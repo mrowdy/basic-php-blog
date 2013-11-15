@@ -1,5 +1,12 @@
 <?php
 
+
+/**
+ * Set login session
+ * @param $username
+ * @param $password
+ * @return bool
+ */
 function login($username, $password){
     global $db;
 
@@ -22,11 +29,19 @@ function login($username, $password){
     return false;
 }
 
+/**
+ * Logout user
+ */
 function logout(){
     session_destroy();
     session_start();
 }
 
+/**
+ * authenticates user. return true if user is logged in.
+ * prevents session hijacking with auth hash.
+ * @return bool
+ */
 function auth(){
     $newUserHash = md5($_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR']);
 

@@ -1,5 +1,11 @@
 <?php
 
+
+/**
+ * set category status to 0
+ * @param $id
+ * @return bool|mysqli_result
+ */
 function deleteCategory($id){
     global $db;
 
