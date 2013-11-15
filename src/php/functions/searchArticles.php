@@ -19,7 +19,7 @@ function searchArticles($string){
                     OR article.image LIKE '%%%s%%'
                     OR category.name LIKE '%%%s%%'
                     OR user.username LIKE '%%%s%%' )
-                    AND active = '1'
+                    AND article.status = '1'
                     ORDER BY article.date_created DESC
                     ", $string, $string, $string, $string, $string, $string);
 
