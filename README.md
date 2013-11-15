@@ -1,4 +1,4 @@
 basic-php-blog
 ==============
 
-A simple php/mysql blog for training purpose
+A simple php/mysql blog for one of my PHP seminars
