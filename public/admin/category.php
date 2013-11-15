@@ -1,13 +1,6 @@
 <?php
 
-require_once '../../src/php/admin.php';
-
-$action = isset($_GET['action'])?$_GET['action']:false;
-$id = isset($_GET['id'])?$_GET['id']:false;
-
-if($action == 'delete' && $id){
-    deleteCategory($id);
-}
+require_once '../../src/admin.php';
 
 $categoryList = getCategories();
 

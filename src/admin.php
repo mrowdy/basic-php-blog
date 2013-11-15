@@ -25,17 +25,11 @@ if(!auth()){
 require_once 'getArticles.php';
 require_once 'getArticleById.php';
 require_once 'getArticlesByCategorySlug.php';
-require_once 'addArticle.php';
-require_once 'editArticle.php';
-require_once 'deleteArticle.php';
 require_once 'uploadImage.php';
 
 //Category functions
 require_once 'getCategories.php';
 require_once 'getCategoryById.php';
-require_once 'addCategory.php';
-require_once 'editCategory.php';
-require_once 'deleteCategory.php';
 
 //User Functions
 require_once 'getUserById.php';

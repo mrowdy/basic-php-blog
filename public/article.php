@@ -1,7 +1,7 @@
 <?php
 
 // include blog setup
-require_once '../src/php/blog.php';
+require_once '../src/blog.php';
 
 $articleId = isset($_GET['id'])?$_GET['id']:0;
 

@@ -1,7 +1,7 @@
 <?php
 
 // include blog setup
-require_once '../src/php/blog.php';
+require_once '../src/blog.php';
 
 //get category slug
 $searchString = $_GET['search']?$_GET['search']:false;
