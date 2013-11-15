@@ -1,7 +1,7 @@
 /**
 * simple-php-blog
 * version: 0.1.0
-* date: 09-11-2013
+* date: 15-11-2013
 *
 * ©2013 Slemgrim
 * slemgrim@gmail.com 
@@ -306,6 +306,7 @@
     margin: 0;
     padding: 0;
     height: auto;
+    border: none;
     display: block; }
   .article a {
     -webkit-transition: color 0.5s;
