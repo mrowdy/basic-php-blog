@@ -11,7 +11,7 @@ function getArticlesByCategorySlug($categorySlug){
     $categorySlug = mysqli_real_escape_string($db, $categorySlug);
 
     $query = sprintf("SELECT article.* FROM article
-                      LEFT JOIN category ON category.id = article.category_id
+                      INNER JOIN category ON category.id = article.category_id
                       WHERE category.slug='%s' AND article.status='1'", $categorySlug);
 
     $result = mysqli_query($db, $query);

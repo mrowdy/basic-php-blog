@@ -11,8 +11,8 @@ function searchArticles($string){
     $string = mysqli_real_escape_string($db, $string);
 
     $query = sprintf("SELECT article.* FROM article
-                    LEFT JOIN category ON article.category_id = category.id
-                    LEFT JOIN user ON article.user_id = user.id
+                    INNER JOIN category ON article.category_id = category.id
+                    INNER JOIN user ON article.user_id = user.id
                     WHERE ( article.title LIKE '%%%s%%'
                     OR article.teaser LIKE '%%%s%%'
                     OR article.content LIKE '%%%s%%'
