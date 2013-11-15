@@ -1,3 +1,4 @@
+<!-- ArticleForm Start -->
 <form class="form editForm" action="/admin/edit-article.php" method="post" enctype="multipart/form-data" >
     <div class="formRow">
         <input type="text" name="title" value="<?php echo $article['title'] ?>" placeholder="title" />
@@ -32,3 +33,4 @@
         <input class="button" type="submit" value="save" />
     </div>
 </form>
+<!-- ArticleForm End -->

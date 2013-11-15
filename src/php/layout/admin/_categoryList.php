@@ -1,3 +1,4 @@
+<!-- CategoryList Start -->
 <h1>Categories</h1>
 <a class="right button small" href="/admin/edit-category.php?action=add">add</a>
 <?php if(isset($categoryList)): ?>
@@ -15,3 +16,4 @@
         <?php endforeach; ?>
     </table>
 <?php endif; ?>
+<!-- CategoryList End -->

@@ -8,7 +8,7 @@
 
 <!-- Google Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Tienne:400,700|Oswald:400,700' rel='stylesheet' type='text/css'>
-<!-- Meta End-->
 
 <meta name="viewport" content="width=device-width, user-scalable=no">
+<!-- Meta End-->
 

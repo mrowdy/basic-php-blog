@@ -1,3 +1,4 @@
+<!-- ArticleList Start -->
 <h1>Articles</h1>
 <a class="right button small" href="/admin/edit-article.php?action=add">add</a>
 <?php if(isset($articleList)): ?>
@@ -15,3 +16,4 @@
         <?php endforeach; ?>
     </table>
 <?php endif; ?>
+<!-- ArticleList End -->
