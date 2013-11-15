@@ -42,9 +42,9 @@ if($action == 'edit' && $id){
     <div class="wrap">
         <div class="mediumContent">
             <?php if($action == 'edit'): ?>
-                <h1>Edit Artcile</h1>
+                <h1>Edit Category</h1>
             <?php else: ?>
-                <h1>Add Artcile</h1>
+                <h1>Add Category</h1>
             <?php endif; ?>
             <?php include 'layout/admin/_categoryForm.php'; ?>
         </div>
